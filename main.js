@@ -129,6 +129,12 @@ function car1_right() {
         uploadcar1();
         uploadcar2();
     }
+    if (car1_x  >= 600)
+    {
+        console.log ("car1 Won");
+        document.getElementById("game_status").innerHTML="White color Car 1 Won !!";
+    }
+
 }
 
 
@@ -170,11 +176,12 @@ function car2_d() {
         uploadcar1();
         uploadcar2();
     }
+    if (car2_x  >= 600)
+    {
+        console.log ("car2 Won");
+        document.getElementById("game_status").innerHTML="Yellow color Car 2 Won !!";
+    }
+
 }
 
-if (car1_x  > 700)
-    {
-        console.log ("car1 Won");
-        document.getElementById("game_status").innerHTML="White color Car 1 Won !!";
-    }
 
